@@ -94,10 +94,11 @@ body {
 
 .contents_list {
     background-color: white;
+    /* height: 593px; */
 }
 
 .list_img {
-    /* width: 100%; */
+    width: 100%;
 }
 
 .list_img img {
@@ -110,11 +111,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 270px;
+    box-sizing: border-box;
 }
 
 .list_tag {
     display: flex;
     gap: 4px;
+    margin-top: 20px;
 }
 
 .list_tag li {
@@ -138,6 +142,8 @@ body {
     color: #333333;
     font-size: 14px;
     line-height: 1.6;
+    flex-basis: 0;
+    flex-grow: 1;
 }
 
 .list_footer::before {
