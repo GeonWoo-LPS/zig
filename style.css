@@ -85,8 +85,11 @@ body {
     box-shadow: inset 0 0 10px green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: none;
+    grid-template-rows: 1fr;
     gap: 30px;
+
+    grid-auto-columns: none;
+    grid-auto-rows: none;
 }
 
 .contents_list {
@@ -94,7 +97,7 @@ body {
 }
 
 .list_img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .list_img img {
