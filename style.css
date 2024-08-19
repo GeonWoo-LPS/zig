@@ -20,6 +20,11 @@ ul {
     list-style: none;
 }
 
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
 /* Typography */
 :root {
     font-family: 'montserrat';
@@ -32,13 +37,13 @@ body {
 }
 
 .l_wrapper {
-    box-shadow: inset 0 0 10px red;
+
     max-width: 1080px;
     margin: 92px auto;
 }
 
 .header {
-    box-shadow: inset 0 0 10px blue;
+
     display: flex;
     align-items: center;
     margin-bottom: 100px;
@@ -82,7 +87,6 @@ body {
 }
 
 .contents {
-    box-shadow: inset 0 0 10px green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -152,7 +156,7 @@ body {
     width: 320px;
     height: 4px;
     background-color: #eeeeee;
-    margin: 20px 0 20px 20px
+    margin: 20px 0 0 20px
 }
 
 .list_footer {
@@ -161,6 +165,22 @@ body {
 }
 
 .footer_contents {
-    margin-left: 22px;
-    padding-bottom: 23px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_text {
+    flex-basis: 0;
+    flex-grow: 1;
+    height: 38px;
+    line-height: 38px;
+}
+
+.footer_icon img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -14px;
 }
